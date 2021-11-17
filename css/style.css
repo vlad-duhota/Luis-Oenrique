@@ -1,0 +1,445 @@
+/* font */
+@font-face {
+    font-family: "Asap";
+    src: url(../fonts/Asap-Regular.ttf);
+}
+
+/* Global styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Asap";
+}
+
+
+.title{
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(122, 122, 122);
+    font-size: 46px;
+}
+.title::before{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background:rgb(122, 122, 122);
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+/* Menu */
+.header {
+    padding-top: 30px;
+background-color: rgb(225, 225, 225);
+height: 750px;
+}
+.container {
+    margin: 0 auto;
+    width: 1366px;
+    padding: 0 100px;
+    height: 100%;
+}
+.logo {
+position: absolute;
+}
+.nav {
+    width: 510px;
+    margin-left: auto;
+    font-family: 'Times New Roman';
+    padding-top:27.5px;
+}
+.menu {
+}
+.menu-item {
+    display: inline-block;
+    margin-right: 40px;
+    
+}
+.menu-item::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    transform-origin: 0%;
+    transform:scaleX(0);
+    transition: all 0.5s;
+}
+
+.menu-item:hover::after{
+    transform: scaleX(1);
+}
+.menu .menu-item:last-child{
+    margin-right: 0;
+}
+.menu-link {
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.hero{
+    margin-top: 57px;
+    height: 616px;
+
+
+ padding-top: 123px;
+  background-image: url(../images/hero.png);
+  background-position: center right;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.hero-title{
+    font-size: 90px;
+
+}
+.subtitle{
+    font-size: 22px;
+    color: rgb(156, 156, 156);
+    
+}
+.hero-button{
+    width: 160px;
+    height: 50px;
+    text-transform: uppercase;
+    margin-top: 33px;
+    margin-right: 20px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.knowmore-button{
+    background-color: #FFF;
+    border: none;
+    transition: all 0.3s;
+  
+}
+.knowmore-button:hover{
+    background-color:rgb(156, 156, 156);
+    color: #FFF;
+}
+.hireme-button{
+    border: 2px solid #000;
+    background: transparent;
+    transition: all 0.3s;
+}
+
+.hireme-button:hover{
+    background-color:rgb(156, 156, 156);
+    color: #FFF;
+}
+
+/* about */
+.about{
+   
+}
+.about-content{
+  padding-top: 120px;
+    width: 475px;
+   position: absolute;
+    height: 325px;
+}
+
+.about-title{
+    text-transform: uppercase;
+    color: #727f90;
+    font-size: 46px;
+}
+.about-text {
+}
+.download-cv {
+    margin-top: 40px;
+    border: 2px solid #727f90;
+    color: #727f90;
+    font-size: 16px;
+    font-weight: 600;
+    background:transparent;
+    width: 250px;
+    height: 50px;
+    transition: all 0.3s;
+}
+.download-cv:hover{
+    background: #727f90;
+    color: #FFF;
+}
+.about-img img{
+    width: 570px;
+    height: 445px;
+}
+.about-img{
+    width: 570px;
+    height: 445px;
+
+    margin-top: 110px;
+    margin-left: auto;
+}
+
+/* services */
+.services{
+    margin-top: 125px;
+    background-color: #f6f6f6;
+    padding: 115px 0;
+  
+}
+
+
+.services-list {
+    display: block;
+    width: 950px;
+    margin: 0 auto;
+}
+.services-list li:nth-child(3),.services-list li:nth-child(6){
+    margin-right: 0;
+}
+
+
+.services-list li{
+    display: inline-block;
+    width: 162px;
+    height: 126px;
+    margin-right: 225px;
+    margin-top: 85px;
+    text-align: center;
+    vertical-align: middle;
+}
+.services-list li img{
+
+display: inline;
+
+}
+
+.services-text {
+    font-size: 24px;
+   
+}
+/* my skills */
+.skills{
+    padding-top: 120px;
+}
+
+.skill-img{
+    margin-top: 63px;
+    width: 100%;
+}
+
+/* portfolio */
+.portfolio{
+    background-color: #f6f6f6;
+    padding-bottom: 50px;
+    padding-top:127px;
+}
+
+.porfolio-list{
+    margin-top: 45px;
+    list-style: none;
+}
+.portfolio-item{
+    display: inline-block;
+      width: 350px;
+    height: 320px;
+    margin-right: 30px;
+    margin-top: 30px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.portfolio-item img{
+    width: 350px;
+    height: 320px;
+    
+}
+
+.loadmore-button {
+    display: block;
+    width: 160px;
+    height: 50px;
+    text-transform: uppercase;
+    margin-top: 50px;
+    font-size: 16px;
+    font-weight: 600;
+    background: #FFF;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   
+    margin-left: auto;
+    margin-right: auto;
+    transition: all 0.2s ease-in;
+}
+
+.loadmore-button:hover{
+    background: #999;
+    color: #FFF;
+}
+/* testimonials */
+.testimonials{
+   margin:125px 0;
+}
+
+.testimonials h2{
+   
+}
+
+.testimonials-img{
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    left:30%;
+
+}
+.testimonials-block{
+ width: 950px;
+ height: 350px;
+ border: 2px solid #000;
+ margin-left: auto;
+margin-right: auto;
+margin: 60px auto 0;
+padding: 80px;
+}
+.testimonials-textblock{
+    width: 585px;
+    height: 165px;
+    margin-left: auto;
+    text-transform: uppercase;
+}
+.block-title{
+    font-size: 30px;
+    
+}
+.block-subtitle{
+    font-size: 12px;
+    font-style: italic;
+    
+}
+.testimonials-text{
+    margin-top: 20px;
+    color: #8793a4;
+    line-height: 25px;
+}
+/* funfact */
+.testimonials-funfact {
+    background: #f6f6f6;
+    padding-top: 75px;
+    padding-bottom: 120px;
+}
+.funfact-list {
+    width: 1025px;
+    display: block;
+    margin:0 auto;
+}
+.funfact-item {
+    display: inline-block;
+    margin-right: 210px;
+    text-align: center;
+    color: #575757 ;
+}
+.funfact-item:last-child{
+    margin-right: 0;
+}
+.funfact-img {
+    display: inline;
+}
+.funfact-number{
+    font-size: 30px;
+    font-weight: 600;
+}
+.funfact-text{ 
+    font-size: 22px;
+}
+/* footer */
+.footer{
+   
+  
+    width: 100%;
+    margin-top: 150px;
+    padding: 150px 0 100px;
+    background-image: url(../images/footer-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size:cover;
+    
+}
+
+.footer-title{
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFF;
+    margin-bottom: 75px; 
+    font-size: 46px;
+}
+
+.footer-title::before{
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background:#FFF;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.name-input{
+    width: 370px;
+    height: 60px;
+    border: none;
+    margin-right: 30px;
+   padding-left: 10px;
+} 
+.email-input{
+    width: 370px;
+    height: 60px;
+    border: none;
+    padding-left: 10px;
+}
+.name-email{
+ text-align: center;
+}
+
+.message{
+    display: block;
+    margin:30px auto;
+    height: 210px;
+    width: 770px;
+    padding-left: 10px;
+}
+.send-button {
+    display: block;
+    background: #FFF;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: none;
+    width: 125px;
+    height: 50px;
+  margin:0 auto;
+  margin-bottom: 60px;
+  transition: all 0.3s;
+}
+.send-button:hover{
+    background-color: #8793a4;
+    color: #FFF;
+}
+
+hr{
+   
+    background-color: #FFF;
+}
+input:focus{
+outline: none;
+border: 2px solid #575757;
+}
+
+.socials{
+    margin-top: 30px;
+}
+.social{
+    list-style: none;
+}
+.social-item{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.social-icon{
+    width: 100%;
+    height: 100%;
+}
